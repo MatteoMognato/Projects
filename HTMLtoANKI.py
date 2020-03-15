@@ -79,8 +79,8 @@ model_picture = genanki.Model(
   templates=[
     {
       'name': 'Card 1',
-      'qfmt': '{{Question}}',              
-      'afmt': '{{FrontSide}}<hr id="answer">{{Answer}}<br>{{MyMedia}}',
+      'qfmt': '<div style="font-family: Arial; text-align: center; font-size: 20px; padding: 20px"> {{Question}} </div>',              
+      'afmt': '<div style="font-family: Arial; text-align: center; font-size: 20px; padding: 20px"> {{FrontSide}}<hr id="answer">{{Answer}}</div> <br>{{MyMedia}}',
     },
   ])
 #model without any picture (the basic one ask and answer)
@@ -94,8 +94,8 @@ model = genanki.Model(
   templates=[
     {
       'name': 'Card 1',
-      'qfmt': '{{Question}}',              
-      'afmt': '{{FrontSide}}<hr id="answer">{{Answer}}',
+      'qfmt': '<div style="font-family: Arial; text-align: center; font-size: 20px; padding: 20px"> {{Question}} </div>',              
+      'afmt': '<div style="font-family: Arial; text-align: center; font-size: 20px; padding: 20px"> {{FrontSide}}<hr id="answer">{{Answer}} </div>',
     },
   ])
 
