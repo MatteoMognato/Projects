@@ -1,19 +1,38 @@
 # Convert From DOCX to Anki Deck
 
-1. First you need to create your word document based on a prefix schema question and answer and maybe after the answer you can insert an image
+#### Prerequisite
 
-so:
+You need python installed in the pc and the following libraries installed:
 
-ask (enter)
-answer(enter)
-{ image (enter) }
+- Mammoth
+-  Genanki
 
-that is a card schema
+#### Step by Step procedure
 
-2. Than you need py mammoth library inside your pc and execute 'mammoth input.docx --output-dir=out
+1. First you need to create your word document based on a prefixed framework:
 
-3. So out would be the folder where an HTML and some images where stored here you need to save the code that I uploaded in this repo
+   ```
+   ask (enter) 
+   
+   answer(enter) 
+   
+   { image (enter) }
+   ```
 
-4. Execute the file and an output anki deck is made
+   Note that the image is between 2 graph bracket because is not necessary.
 
-5. Double click on it and all the new deck would be imported into your anki profile
+   That is the card schema and then you can repeat it. Note that you can separate 2 cards without any empty line just repeating the schema or you can insert some empty line between 2 (future) cards
+
+2. Than from the cmd prompt you have to execute  
+
+   ```
+   mammoth input.docx --output-dir=out
+   ```
+
+   where input is the word file you have created and out is the folder created for storing the html and pictures. 
+
+3. In the out folder or the folder you have choose for the html and images you have to put the py code and execute.
+
+4. An output anki deck is made
+
+5. Double click on it and all the new deck would be imported into your anki profile.

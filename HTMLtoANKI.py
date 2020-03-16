@@ -20,8 +20,10 @@ class MyHTMLParser(HTMLParser):
             #print("Encountered a start tag:", tag)
         elif(tag=='img'): #is an image
             allTag.append('si')
-            allTag.append(attrs[1][1])
-            #print(attrs[1][1])
+            print(attrs)
+            if(len(attrs)<2): allTag.append(attrs[0][1]) #cot
+            else: allTag.append(attrs[1][1])
+            #print(attrs[0][1])
         else: allTag.append("<"+tag+">")
         #might be a font caratheristics
     def handle_endtag(self, tag):
@@ -102,7 +104,7 @@ model = genanki.Model(
 #generate the deck with is code and name
 my_deck = genanki.Deck(
   222222222222,
-  'Speremo che el vada')
+  'New cards from docx')
 
 def create():
     """
